@@ -18,7 +18,7 @@
       <p>Small tool be careful</p>
     </div>
     <form action="#" method="POST" class="signupForm" name="signupform">
-      <h2>Test your info</h2>
+      <h2>Test your information</h2>
       <ul class="noBullet">
         <li>
           <label for="username"></label>
@@ -31,7 +31,8 @@
         </li>
         <li>
           <label for="phone"></label>
-          <input type="text" class="inputFields" id="phone" name="phone" placeholder="Phone" value="" required />
+          <input type="text" class="inputFields" id="phone" name="phone" placeholder="Phone" value=""
+            oninput="return phoneValidation(this.value)" required />
         </li>
         <li>
           <label for="post"></label>
