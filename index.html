@@ -18,7 +18,7 @@
       <p>Small tool be careful</p>
     </div>
     <form action="#" method="POST" class="signupForm" name="signupform">
-      <h2>Sign Up</h2>
+      <h2>Test your info</h2>
       <ul class="noBullet">
         <li>
           <label for="username"></label>
@@ -35,7 +35,8 @@
         </li>
         <li>
           <label for="post"></label>
-          <input type="text" class="inputFields" id="post" name="post" placeholder="Post Code" value="" required />
+          <input type="text" class="inputFields" id="post" name="post" placeholder="Post Code" value=""
+            oninput="return postValidation(this.value)" required />
         </li>
         <li id="center-btn">
           <input type="submit" id="join-btn" name="join" alt="Join" value="Submit">
