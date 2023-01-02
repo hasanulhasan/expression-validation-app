@@ -17,7 +17,7 @@
       <i class="icon ion-ios-ionic-outline" aria-hidden="true"></i>
       <p>Small tool be careful</p>
     </div>
-    <form action="#" method="POST" class="signupForm" name="signupform">
+    <form class="signupForm" name="signupform" onsubmit="return test()" id="myBtn">
       <h2>Test your information</h2>
       <ul class="noBullet">
         <li>
@@ -44,6 +44,16 @@
         </li>
       </ul>
     </form>
+  </div>
+  <!-- <button>Open Modal</button> -->
+  <!-- The Modal -->
+  <div id="myModal" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <p>Great!!</p>
+      <p>Your all information is Correct!! </p>
+    </div>
   </div>
   <script src="test.js"></script>
 </body>
