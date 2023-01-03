@@ -16,8 +16,9 @@
       <h2>An Expression Validation App</h2>
       <i class="icon ion-ios-ionic-outline" aria-hidden="true"></i>
       <p>Small tool be careful</p>
+      <p id="testInfo"></p>
     </div>
-    <form class="signupForm" name="signupform" onsubmit="return test()" id="myBtn">
+    <form class="signupForm" name="signupform" id="myBtn">
       <h2>Test your information</h2>
       <ul class="noBullet">
         <li>
@@ -27,7 +28,8 @@
         </li>
         <li>
           <label for="email"></label>
-          <input type="email" class="inputFields" id="email" name="email" placeholder="Email" value="" required />
+          <input type="email" class="inputFields" id="email" name="email" placeholder="Email" value=""
+            oninput="return emailValidation(this.value)" required />
         </li>
         <li>
           <label for="phone"></label>
@@ -40,20 +42,10 @@
             oninput="return postValidation(this.value)" required />
         </li>
         <li id="center-btn">
-          <input type="submit" id="join-btn" name="join" alt="Join" value="Submit">
+          <input type="submit" id="join-btn" name="join" alt="Join">
         </li>
       </ul>
     </form>
-  </div>
-  <!-- <button>Open Modal</button> -->
-  <!-- The Modal -->
-  <div id="myModal" class="modal">
-    <!-- Modal content -->
-    <div class="modal-content">
-      <span class="close">&times;</span>
-      <p>Great!!</p>
-      <p>Your all information is Correct!! </p>
-    </div>
   </div>
   <script src="test.js"></script>
 </body>
